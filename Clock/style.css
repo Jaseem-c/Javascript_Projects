@@ -1,0 +1,8 @@
+*{
+    background-color: black;
+    overflow: hidden;
+}
+.dclock h1{
+    font-size: 100px;
+    color: yellowgreen;
+}
