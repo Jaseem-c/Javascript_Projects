@@ -1,0 +1,119 @@
+body{
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    
+}
+.container{
+    background:rgba(255,255,255,.1);
+    backdrop-filter: blur(30px);
+    padding: 20px;
+    border-radius: 16px;
+    color: #fff;
+    height: 600px;
+    width: 500px;
+    position: relative;
+    border: 2px solid rgba(255,255,255,.2);
+}
+.search-box{
+    width: 100%;
+    height: 55px;
+    position: relative;
+}
+.search-box input{
+position: absolute;
+width: 100%;
+height: 100%;
+background: transparent;
+border: 2px solid rgba(255,255,255,.2);
+outline: none;
+border-radius: 16px;
+font-size: 22px;
+color: #fff;
+font-weight: 500;
+text-transform: uppercase;
+padding: 0 48px 0 42px;
+}
+.search-box i{
+    position: absolute;
+    left: 10px;
+    font-size: 28px;
+}
+.search-box input::placeholder{
+    color: white;
+    text-transform: capitalize;
+}
+.search-box button{
+    position: absolute;
+    right: 0;
+    outline: none;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #fff;
+    padding: 0 40px 0 5px;
+    cursor: pointer;
+}
+.weather-box{
+    text-align: center;
+    margin: 40px 0;
+}
+.weather-box img{
+    width: 60%;
+}
+.weather-box .temperature{
+position: relative;
+font-size: 64px;
+line-height: 1;
+font-weight: 700;
+margin: 20px 0 6px -30px;
+
+}
+.weather-box .temperature span{
+    font-size: 24px;
+    position: absolute;
+    margin-left: 4px;
+}
+.weather-box .description{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.weather-details
+{
+    position:absolute;
+    left: 0;
+    padding: 0 20px;
+    display: flex;
+    width: 100%;
+}
+.weather-details .humidity,
+.weather-details .wind{
+display: flex;
+align-items: center;
+width: 50%
+}
+.weather-details i{
+    font-size: 56px;
+    margin-right: 10px;
+}
+.weather-details span{
+    font-size: 22px;
+    display: inline-block;
+    font-weight: 500;
+}
+.weather-details p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+.weather-details .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
